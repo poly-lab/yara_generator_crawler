@@ -1,5 +1,5 @@
 import requests
-
+from urllib import urlretrieve
 url='http://www.yara-generator.net/rules/'
 for i in range(222,500):
     url=url+str(i)
@@ -10,4 +10,6 @@ for i in range(222,500):
         print i
     else:
         print i,"ok"
+url3='http://www.yara-generator.net/rules/235/17404/simpleandsuperyararules?download=1'
+urlretrieve(url,"1.zip")
     
